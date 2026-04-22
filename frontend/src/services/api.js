@@ -5,7 +5,7 @@ const AUTH_STORAGE_KEY = 'lifelink_token'
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   headers: { 'Content-Type': 'application/json' },
-  timeout: 10000,
+  timeout: 30000,
 })
 
 // Attach JWT on every request
