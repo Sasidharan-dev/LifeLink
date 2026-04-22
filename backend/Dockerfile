@@ -5,4 +5,4 @@ COPY . .
 
 RUN mvn clean package -DskipTests
 
-CMD ["java", "-jar", "target/lifelink-backend-1.0.0.jar"]
+CMD ["sh", "-c", "java -jar target/lifelink-backend-1.0.0.jar --server.port=$PORT"]
